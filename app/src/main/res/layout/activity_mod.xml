@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/horizontalScrollView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mod1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mod1"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:id="@+id/mod2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mod2"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:id="@+id/mod3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mod3"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:id="@+id/mod4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mod4"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:id="@+id/mod5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mod5"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

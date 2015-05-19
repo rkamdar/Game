@@ -1,0 +1,68 @@
+<RelativeLayout
+    android:id="@+id/endScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll3"
+            android:layout_alignTop="@id/ll3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/middlepaper"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOU\nWON"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:maxLines="2" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="30dp"/>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT LEVEL"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="visible"/>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

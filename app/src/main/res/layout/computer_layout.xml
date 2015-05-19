@@ -1,0 +1,97 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/com1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/com10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/curtain"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:src="@drawable/curtain"
+        android:visibility="visible"/>
+
+</RelativeLayout>

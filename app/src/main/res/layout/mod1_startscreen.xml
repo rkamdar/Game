@@ -1,0 +1,120 @@
+<RelativeLayout
+    android:id="@+id/startScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll2"
+            android:layout_alignTop="@id/ll2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/middlepaper"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tower Numbers\ngo from"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:maxLines="2" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="10dp"/>
+
+            <ImageView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:maxLines="1" />
+
+            <ImageView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:layout_weight="1"/>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
+
+            <ImageButton
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/start"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:background="@null"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
