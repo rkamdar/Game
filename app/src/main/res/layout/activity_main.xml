@@ -1,7 +1,7 @@
 <LinearLayout
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/back"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <!--
@@ -478,15 +478,6 @@
             </RelativeLayout>
         -->
         <include layout="@layout/mod1_endscreen"></include>
-
-        <ImageView
-            android:id="@+id/scoreboard"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/scoreboard"
-            android:layout_alignParentBottom="true"
-            android:scaleType="fitEnd"
-            android:visibility="visible"/>
 
         <ImageView
             android:id="@+id/skull"
