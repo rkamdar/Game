@@ -58,6 +58,7 @@ public class MainActivity extends Activity {
     int level = 0;
     int score = 0;
     int mod = 0;
+    boolean mod5 = false;
 
     ArrayList<Integer> remBox;
     ArrayList<Integer> myBox;
@@ -152,15 +153,23 @@ public class MainActivity extends Activity {
         width = metrics.widthPixels;
         height = metrics.heightPixels;
 
-        level = 0;
-        score = 0;
-
         Intent intent = getIntent();
+        level = intent.getIntExtra("level",0);
         mod = intent.getIntExtra("mod",0);
+        score = intent.getIntExtra("score",0);
+
+        if(mod == 5 || intent.getBooleanExtra("mod5",false)){
+            mod5 = true;
+        }
+
+        if(mod == 5){
+            mod = 1;
+            level = 0;
+        }
 
         initAnims();
         findViews();
-        init(0);
+        init(level);
         drawBitmaps();
         setClickListner();
         timerAnims();
@@ -960,6 +969,14 @@ public class MainActivity extends Activity {
             }
         },100*(10-i));
         }
+
+        Intent intent = new Intent(this, NextActivity.class);
+        intent.putExtra("result","win");
+        intent.putExtra("mod",mod);
+        intent.putExtra("level", level);
+        intent.putExtra("score",score);
+        intent.putExtra("mod5",mod5);
+        startActivity(intent);
     }
 
     // AI move
@@ -1410,6 +1427,10 @@ public class MainActivity extends Activity {
                 }
             },100*(10-i));
         }
+
+        Intent intent = new Intent(this, NextActivity.class);
+        intent.putExtra("result","loss");
+        startActivity(intent);
     }
 
     // Draw all Bitmaps (only called when init / new level)
